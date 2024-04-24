@@ -1,13 +1,25 @@
 import './App.css';
-import Navbar from './Components/Navbar';
-// import Background from './Components/Background'
-import Hero from './Components/Hero';
-
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Hero from './Pages/Hero'; // Corrected import path
+import About from './Pages/About';
+import Contact from './Pages/Contact';
+import NoPage from './Pages/NoPage';
 function App() {
   return (
     <>
-      <Navbar />
-      <Hero />
+      <div>
+        <BrowserRouter>
+          <Routes>
+            <Route index element={<Hero />}/>
+            <Route path="/Hero" element={<Hero />} /> {/* Corrected Route syntax */}
+            <Route path="/about" element={<About />} /> {/* Added Route for About page */}
+            <Route path='/contact' element={<Contact />} />
+            <Route path='*' element={<NoPage />} />
+          </Routes>
+        </BrowserRouter>
+      </div>
+      {/* <Navbar /> */}
+      {/* <Hero /> */}
       {/* <Background /> */}
     </>
   );
