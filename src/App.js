@@ -4,6 +4,7 @@ import Hero from './Pages/Hero'; // Corrected import path
 import About from './Pages/About';
 import Contact from './Pages/Contact';
 import NoPage from './Pages/NoPage';
+import Projects from './Pages/Projects';
 function App() {
   return (
     <>
@@ -14,6 +15,7 @@ function App() {
             <Route path="/Hero" element={<Hero />} /> {/* Corrected Route syntax */}
             <Route path="/about" element={<About />} /> {/* Added Route for About page */}
             <Route path='/contact' element={<Contact />} />
+            <Route path='/projects' element={< Projects/>} />
             <Route path='*' element={<NoPage />} />
           </Routes>
         </BrowserRouter>

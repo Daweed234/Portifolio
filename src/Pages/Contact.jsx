@@ -23,7 +23,7 @@ const Contact = () => {
                   collaborate on impactful projects and talk <br />
                   about everything relating to Tech.
                 </p>
-                <button class="px-7 py-4 bg-[#DCD6C8] rounded-md font-medium">
+                <button class="px-7 py-4 bg-[#DCD6C8] rounded-md font-medium hover:bg-[#C3BAAB] hover:-translate-y-3 duration-300">
                   Say Hello
                 </button>
               </div>

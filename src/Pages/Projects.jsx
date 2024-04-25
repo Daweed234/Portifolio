@@ -12,8 +12,8 @@ const Projects = () => {
     </div> */}
             <div className='mt-32'>
                 <div className=' text-center'>
-                    <p className='text-6xl font-bold mb-3'>Guess what.....</p>
-                    <p className='text-lg font-semibold'>We are still working on it</p>
+                    <p className='text-6xl font-bold mb-3 dark:text-white'>Guess what.....</p>
+                    <p className='text-lg font-semibold dark:text-white'>We are still working on it</p>
                 </div>
                 <p className='text-center text-8xl mb-3'>😮‍💨</p>
             </div>
