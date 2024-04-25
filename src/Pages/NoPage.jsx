@@ -21,8 +21,8 @@ const NoPage = () => {
                     <p className='text-center mb-3'>The page you are looking for might have been removed <br />
                     its name changed or its temporary unavailable</p>
                 </div>
-                <Link to={"/"}>
-                <button class="px-7 py-4 bg-[#DCD6C8] hover:bg-[#C3BAAB]  border-4 border-white rounded-md font-medium hover:-translate-y-3 duration-300">
+                 <Link to={"/"}>
+                <button class="mt-5 px-7 py-4 bg-[#DCD6C8] hover:bg-[#C3BAAB]  border-4 border-white rounded-md font-medium hover:-translate-y-3 duration-300">
                   Go Back Home Page
                 </button>
                     </Link>

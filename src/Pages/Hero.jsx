@@ -7,6 +7,20 @@ import { FaLinkedin } from 'react-icons/fa';
 import Navbar from '../Components/Navbar';
 import { Link } from 'react-router-dom';
 
+const Stack = ({ stacks }) => {
+    return (
+      <>
+        <div className=" bg-transparent mt-4">
+          {stacks.map((stack, idx) => (
+            <p key={idx} className=" bg-transparent mt-4">
+              {stack}
+            </p>
+          ))}
+        </div>
+      </>
+    );
+  };
+
 const Hero = () => {
     return (
         <>
@@ -17,11 +31,11 @@ const Hero = () => {
                 </div>
                 <div className='w-96 h-80 bg-[white] rounded-lg'>
                     <div className='bg-transparent'>
-                        <p className='mt-7 bg-transparent font-semibold text-4xl ml-5'>Hi, I'm <span className='bg-transparent'>David</span></p>
+                        <p className='mt-7 bg-transparent font-semibold text-4xl ml-5'>Hi, I'm David</p>
                         <p className='bg-transparent text-lg font-medium ml-5 mt-1'>I am a Full Stack Engineer</p>
                         <div className='flex flex-row gap-2 bg-transparent hover:translate-y-[-5px] duration-300 mt-2 '>
-                            <p className='ml-10 bg-transparent text-xs'>📌</p>
-                            <p className='text-xs bg-transparent mb-2'>Based in Kigali, Rwanda</p>
+                         <p className='ml-10 bg-transparent text-xs'>📌</p>
+                            <p className='text-xs bg-transparent mb-2'>Based in Kigali, Rwanda</p> 
                         </div>
                         <div className='flex flex-row gap-2 bg-transparent hover:translate-y-[-5px] duration-300'>
                             <p className='ml-8 bg-transparent text-lg'>🧑🏻‍💻</p>
