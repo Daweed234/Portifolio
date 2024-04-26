@@ -1,15 +1,18 @@
 import React, { useContext, useEffect, useState } from "react";
 
+const local =  localStorage.getItem("theme")
+
 export const ThemeContext = React.createContext({
   theme: "light",
   setTheme: () => {},
 });
 
 export const ThemeContextProvider = ({ children }) => {
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState(local);
 
   useEffect(() => {
-    localStorage.setItem("theme", theme);
+   
+    localStorage.setItem("theme",  theme);
 
     document.querySelector("html").setAttribute("class", theme);
   }, [theme]);

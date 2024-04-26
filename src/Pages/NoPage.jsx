@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from '../Components/Navbar';
+import Navbar from '../Components/Navbar'
 import {
     BrowserRouter as Router,
     Switch,
@@ -7,12 +7,13 @@ import {
     Link,
     useNavigate,
   } from "react-router-dom";
+  import Copyright from '../Components/Copyright';
 
 const NoPage = () => {
     return (
         <>
             <Navbar />
-            <div className='flex flex-col justify-center items-center mb-32'>
+            <div className='flex flex-col justify-center items-center '>
                 <div className='mt-32 dark:text-white'>
                     <div className=' text-center'>
                     <p className='text-6xl font-bold mb-3'>Oops !</p>
@@ -27,6 +28,7 @@ const NoPage = () => {
                 </button>
                     </Link>
             </div>
+            <Copyright />
         </>
     )
 }

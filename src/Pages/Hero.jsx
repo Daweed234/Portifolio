@@ -6,6 +6,7 @@ import { FaGithub } from 'react-icons/fa';
 import { FaLinkedin } from 'react-icons/fa';
 import Navbar from '../Components/Navbar';
 import { Link } from 'react-router-dom';
+import Copyright from '../Components/Copyright';
 
 const Stack = ({ stacks }) => {
     return (
@@ -25,7 +26,7 @@ const Hero = () => {
     return (
         <>
             <Navbar />
-            <div className='flex flex-row justify-center items-center mt-20 gap-24  dark:bg-[#0D2538]'>
+            <div className='flex flex-row justify-center items-center mt-20 gap-24 dark:bg-[#0D2538]'>
                 <div className='rounded-full size-72 bg-blue-600 mt-4'>
                     <img src={Image} className='rounded-full size-64 ml-4 mt-4 ' alt="" />
                 </div>
@@ -70,6 +71,7 @@ const Hero = () => {
                 <div>
                 </div>
             </div>
+            <Copyright />
         </>
     )
 }

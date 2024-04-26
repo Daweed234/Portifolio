@@ -1,5 +1,7 @@
 import React from "react";
 import Navbar from "../Components/Navbar";
+import Copyright from '../Components/Copyright';
+
 const Contact = () => {
   return (
     <>
@@ -31,6 +33,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      <Copyright />
     </>
   );
 };

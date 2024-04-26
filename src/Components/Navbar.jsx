@@ -18,7 +18,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="dark:text-white dark:bg-[#0D2538] top-0 sticky">
+    <div className="dark:text-white bg-[#DCD6C8] dark:bg-[#0D2538] top-0 sticky">
       <nav className="px-5 py-5 dark:bg-[#0D2538]" >
         <ul className="flex flex-row justify-center items-center gap-32 text-[12px]  dark:bg-[#0D2538]">
           <Link to="/">

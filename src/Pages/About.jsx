@@ -1,6 +1,6 @@
 import React from "react";
-// import { Link } from 'react-router-dom';
 import Navbar from "../Components/Navbar";
+import Copyright from "../Components/Copyright";
 
 const Stack = ({ stacks }) => {
   return (
@@ -16,6 +16,7 @@ const Stack = ({ stacks }) => {
   );
 };
 
+
 const About = () => {
   return (
     <>
@@ -24,6 +25,11 @@ const About = () => {
       <div className="flex flex-col justify-center items-center">
         <div className="flex container bg-[#27242f] text-white w-[600px] mt-5 h-auto rounded-lg ">
           <p className="bg-transparent ml-10 mt-9 text-lg">
+          <div className="-mt-6 -ml-4 mb-5 flex flex-row gap-3">
+            <div className="circle1 bg-red-400"></div>
+            <div className="circle2 circle1 bg-yellow-400"></div>
+            <div className="circle3 circle1 bg-green-400"></div>
+          </div>
             <p className="bg-transparent text-[#008DDA]">
               ntwali ${" "}
               <span className="bg-transparent text-white">
@@ -36,7 +42,6 @@ const About = () => {
             <div className="flex flex-row bg-transparent">
               <div className=" bg-transparent mt-4">
                 <p className="bg-transparent mb-8">
-                  
                   Meet Ntwali, a self-reliant web-app developer fascinated by
                   Solidity and Web 3.0. Driven by determination, <br /> I craft
                   intuitive web applications, seamlessly blending functionality
@@ -59,6 +64,11 @@ const About = () => {
       <div className="flex flex-col justify-center items-center">
         <div className="flex container bg-[#27242f] text-white w-[600px] mt-5 h-auto rounded-lg ">
           <p className="bg-transparent ml-10 mt-9 text-lg">
+          <div className="-mt-6 -ml-4 mb-5 flex flex-row gap-3">
+            <div className="circle1 bg-red-400"></div>
+            <div className="circle2 circle1 bg-yellow-400"></div>
+            <div className="circle3 circle1 bg-green-400"></div>
+          </div>
             <p className="bg-transparent text-[#008DDA]">Work Experience $ </p>
 
             <p className="bg-transparent text-[#008DDA] mt-4">InfluencerHub</p>
@@ -97,6 +107,11 @@ const About = () => {
       <div className="flex flex-col justify-center items-center">
         <div className="flex container bg-[#27242f] text-white w-[600px] mt-5 h-auto rounded-lg ">
           <p className="bg-transparent ml-10 mt-9 text-lg">
+          <div className="-mt-6 -ml-4 mb-5 flex flex-row gap-3">
+            <div className="circle1 bg-red-400"></div>
+            <div className="circle2 circle1 bg-yellow-400"></div>
+            <div className="circle3 circle1 bg-green-400"></div>
+          </div>
             <p className="bg-transparent text-[#008DDA]">
               ntwali ${" "}
               <span className="bg-transparent text-white">cd skills</span>
@@ -136,22 +151,11 @@ const About = () => {
             <div className="flex flex-row bg-transparent gap-48">
               <div className=" bg-transparent mt-4">
                 <Stack
-                  stacks={[
-                    "Nodejs", 
-                    "Expressjs", 
-                    "MongoDb", 
-                    "Rest Api"
-                  ]}
+                  stacks={["Nodejs", "Expressjs", "MongoDb", "Rest Api"]}
                 />
               </div>
               <div className=" bg-transparent mt-4">
-                <Stack stacks={[
-                    "Php",
-                    "Python",
-                    "Firebase",
-                   "Google Cloud"
-                   ]}
-                 />
+                <Stack stacks={["Php", "Python", "Firebase", "Google Cloud"]} />
               </div>
             </div>
 
@@ -160,41 +164,22 @@ const About = () => {
             </p>
             <div className="flex flex-row bg-transparent gap-52">
               <div className=" bg-transparent mt-4">
-                <Stack stacks={[
-                  "Git", 
-                  "Vite", 
-                  "Vercel", 
-                  "Netlify"
-                  ]} 
-                  />
+                <Stack stacks={["Git", "Vite", "Vercel", "Netlify"]} />
               </div>
               <div className=" bg-transparent mt-4">
-                <Stack stacks={[
-                  "Npm",
-                  "Jest", 
-                  "Figma", 
-                  "CPanel"
-                  ]} 
-                  />
+                <Stack stacks={["Npm", "Jest", "Figma", "CPanel"]} />
               </div>
             </div>
 
             <p className="bg-transparent text-[#008DDA] mt-7">learning</p>
             <div className="flex flex-row bg-transparent gap-40 mb-8">
               <div className=" bg-transparent mt-4">
-                <Stack stacks={[
-                  "Web 3.0", 
-                  "3D Animations"
-                ]}
-                 />
+                <Stack stacks={["Web 3.0", "3D Animations"]} />
                 <p className=" bg-transparent mt-4"></p>
                 <p className=" bg-transparent mt-4"></p>
               </div>
               <div className=" bg-transparent mt-4">
-                <Stack stacks={[
-                  "Solidity"
-                  ]}
-                  />
+                <Stack stacks={["Solidity"]} />
 
                 <p className=" bg-transparent mt-4"></p>
               </div>
@@ -206,6 +191,11 @@ const About = () => {
       <div className="flex justify-center items-center mb-32">
         <div className="flex container bg-[#27242f] text-white w-[600px] mt-5 h-auto rounded-lg ">
           <p className="bg-transparent ml-10 mt-9 text-lg">
+          <div className="-mt-6 -ml-4 mb-5 flex flex-row gap-3">
+            <div className="circle1 bg-red-400"></div>
+            <div className="circle2 circle1 bg-yellow-400"></div>
+            <div className="circle3 circle1 bg-green-400"></div>
+          </div>
             <p className="bg-transparent text-[#008DDA] ">
               ntwali ${" "}
               <span className="bg-transparent text-white">
@@ -221,17 +211,19 @@ const About = () => {
             </p>
 
             <div className="bg-transparent mt-4 mb-8">
-            <Stack stacks={[
-                  "🧑🏻‍💻 Coding", 
-                  "🥂 Partying", 
-                  "🛠️ Problem solving", 
-                  "🍿 Netflix and chill"
-                  ]} 
-                  />
+              <Stack
+                stacks={[
+                  "🧑🏻‍💻 Coding",
+                  "🥂 Partying",
+                  "🛠️ Problem solving",
+                  "🍿 Netflix and chill",
+                ]}
+              />
             </div>
           </p>
         </div>
       </div>
+     <Copyright />
     </>
   );
 };

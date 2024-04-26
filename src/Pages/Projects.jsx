@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from '../Components/Navbar';
+import Copyright from '../Components/Copyright';
 
 const Projects = () => {
     return (
@@ -17,6 +18,7 @@ const Projects = () => {
                 </div>
                 <p className='text-center text-8xl mb-3'>😮‍💨</p>
             </div>
+            <Copyright />
         </>
     )
 }
