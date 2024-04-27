@@ -1,67 +1,62 @@
-import React, { useState, useEffect } from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  useNavigate,
-} from "react-router-dom";
+import React, { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import { FiSun, FiMoon } from "react-icons/fi";
 import { useTheme } from "../ThemeProvider";
 
 const Navbar = () => {
   const navigate = useNavigate();
   const { setTheme, theme } = useTheme();
+  const [isOpen, setIsOpen] = useState(false);
 
   const handleThemeSwitch = () => {
     setTheme(theme === "dark" ? "light" : "dark");
   };
 
   return (
-    <div className="dark:text-white bg-[#DCD6C8] dark:bg-[#0D2538] top-0 sticky">
-      <nav className="px-5 py-5 dark:bg-[#0D2538]" >
-        <ul className="flex flex-row justify-center items-center gap-32 text-[12px]  dark:bg-[#0D2538]">
-          <Link to="/">
-            <li className="hover:translate-y-[-5px] duration-300 text-sm hover:cursor-pointer dark:bg-[#0D2538] ">
+    <div className="sticky top-0 dark:text-white bg-[#DCD6C8] dark:bg-[#0D2538]">
+      <nav className="px-5 py-5 dark:bg-[#0D2538]">
+        <div className="flex justify-between items-center md:container mx-auto">
+          <div className="flex justify-center items-center flex-grow">
+            <Link to="/" className="text-sm md:text-base">
               Home
-              <div className="border-blue-600 border-2 dark:bg-[#0D2538]"></div>
-            </li>
-          </Link>
-          <li
-            className="hover:translate-y-[-5px] duration-300 text-sm hover:cursor-pointer dark:bg-[#0D2538] "
-            onClick={() => navigate("/about")}
-          >
-            About
-          </li>
-          <li
-            className="hover:translate-y-[-5px] duration-300 text-sm hover:cursor-pointer dark:bg-[#0D2538]"
-            onClick={() => navigate("/projects")}
-          >
-            Projects
-          </li>
-          <li
-            className="hover:translate-y-[-5px] duration-300 text-sm hover:cursor-pointer dark:bg-[#0D2538]"
-            onClick={() => navigate("/contact")}
-          >
-            Contact
-          </li>
-          <div className=" dark:bg-[#0D2538]">
-            {theme == "dark" ? (
+            </Link>
+            <Link
+              to="/about"
+              className="ml-8 text-sm md:text-base hover:underline md:ml-12"
+            >
+              About
+            </Link>
+            <Link
+              to="/projects"
+              className="ml-8 text-sm md:text-base hover:underline md:ml-12"
+            >
+              Projects
+            </Link>
+            <Link
+              to="/contact"
+              className="ml-8 text-sm md:text-base hover:underline md:ml-12"
+            >
+              Contact
+            </Link>
+          </div>
+          <div>
+            {theme === "dark" ? (
               <FiSun
-                className=" text-sm hover:translate-y-[-5px]  dark:bg-[#0D2538]"
+                className="text-sm cursor-pointer md:text-base"
                 onClick={handleThemeSwitch}
               />
             ) : (
               <FiMoon
-                className=" text-sm hover:translate-y-[-5px] dark:bg-[#0D2538]"
+                className="text-sm cursor-pointer md:text-base"
                 onClick={handleThemeSwitch}
               />
             )}
           </div>
-        </ul>
+        </div>
       </nav>
     </div>
   );
 };
 
 export default Navbar;
+

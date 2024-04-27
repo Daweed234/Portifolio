@@ -2,7 +2,16 @@ import React from "react";
 import Navbar from "../Components/Navbar";
 import Copyright from '../Components/Copyright';
 
+
+
 const Contact = () => {
+  const handleClick = () => {
+    const email = "your.email@example.com";
+    const subject = "Hello";
+    const body = "Hello,%0D%0A%0D%0AI'm reaching out to say hello.";
+    const mailtoLink = `mailto:${email}?subject=${subject}&body=${body}`;
+    window.location.href = mailtoLink;
+  };
   return (
     <>
       <Navbar />
@@ -25,7 +34,7 @@ const Contact = () => {
                   collaborate on impactful projects and talk <br />
                   about everything relating to Tech.
                 </p>
-               <button class="px-7 py-4 bg-[#DCD6C8] rounded-md font-medium hover:bg-[#C3BAAB] hover:-translate-y-3 duration-300">
+               <button class="px-7 py-4 bg-[#DCD6C8] rounded-md font-medium hover:bg-[#C3BAAB] hover:-translate-y-3 duration-300" onClick={handleClick}>
                   Say Hello
                 </button>
               </div>

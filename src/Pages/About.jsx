@@ -7,7 +7,7 @@ const Stack = ({ stacks }) => {
     <>
       <div className=" bg-transparent mt-4">
         {stacks.map((stack, idx) => (
-          <p key={idx} className=" bg-transparent mt-4">
+          <p key={idx} className=" hover:-translate-y-3 bg-transparent duration-300 mt-4">
             {stack}
           </p>
         ))}
@@ -15,8 +15,6 @@ const Stack = ({ stacks }) => {
     </>
   );
 };
-
-
 const About = () => {
   return (
     <>
@@ -216,7 +214,7 @@ const About = () => {
                   "🧑🏻‍💻 Coding",
                   "🥂 Partying",
                   "🛠️ Problem solving",
-                  "🍿 Netflix and chill",
+                  "🏀 Basketball",
                 ]}
               />
             </div>

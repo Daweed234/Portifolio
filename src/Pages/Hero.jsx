@@ -26,10 +26,8 @@ const Hero = () => {
     return (
         <>
             <Navbar />
-            <div className='flex flex-row justify-center items-center mt-20 gap-24 dark:bg-[#0D2538]'>
-                <div className='rounded-full size-72 bg-blue-600 mt-4'>
-                    <img src={Image} className='rounded-full size-64 ml-4 mt-4 ' alt="" />
-                </div>
+            <div className='flex flex-row justify-center items-center mt-20 gap-24 dark:bg-transparent dark:bg-[#0D2538]'>
+                    <img src={Image} className='rounded-full size-64 ml-4 mt-4 border-8 border-blue-600' alt="" />
                 <div className='w-96 h-80 bg-[white] rounded-lg'>
                     <div className='bg-transparent'>
                         <p className='mt-7 bg-transparent font-semibold text-4xl ml-5'>Hi, I'm David</p>

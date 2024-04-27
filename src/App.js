@@ -5,10 +5,11 @@ import About from './Pages/About';
 import Contact from './Pages/Contact';
 import NoPage from './Pages/NoPage';
 import Projects from './Pages/Projects';
+import Design from './Components/Design';
 function App() {
   return (
     <>
-      <div>
+      <div className=' w-full h-screen relative'>
         <BrowserRouter>
           <Routes>
             <Route index element={<Hero />}/>
@@ -19,10 +20,11 @@ function App() {
             <Route path='*' element={<NoPage />} />
           </Routes>
         </BrowserRouter>
+     <div className='w-full h-screen absolute top-0 -z-50'>
+     <Design />
+     </div>
+
       </div>
-      {/* <Navbar /> */}
-      {/* <Hero /> */}
-      {/* <Background /> */}
     </>
   );
 }
