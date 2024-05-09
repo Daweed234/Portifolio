@@ -42,12 +42,12 @@
             <div>
               {theme === "dark" ? (
                 <FiSun
-                  className="text-sm cursor-pointer md:text-base"
+                  className="text-sm cursor-pointer md:text-base md:ml-5 md:mr-5"
                   onClick={handleThemeSwitch}
                 />
               ) : (
                 <FiMoon
-                  className="text-sm cursor-pointer md:text-base"
+                  className="text-sm cursor-pointer md:text-base md:ml-5 md:mr-5"
                   onClick={handleThemeSwitch}
                 />
               )}
