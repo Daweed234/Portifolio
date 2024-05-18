@@ -11,12 +11,12 @@ const Projects = () => {
         <p></p>
         <p>😮‍💨</p>
     </div> */}
-            <div className='mt-32'>
+            <div className='py-32'>
                 <div className=' text-center'>
-                    <p className='text-6xl font-bold mb-3 dark:text-white'>Guess what.....</p>
+                    <p className='text-6xl font-bold mb-3 md:text-3xl dark:text-white'>Guess what.....</p>
                     <p className='text-lg font-semibold dark:text-white'>We are still working on it</p>
                 </div>
-                <p className='text-center text-8xl mb-3'>😮‍💨</p>
+                <p className='text-center text-8xl py-3'>😮‍💨</p>
             </div>
             <Copyright />
         </>

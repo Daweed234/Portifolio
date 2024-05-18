@@ -22,19 +22,19 @@
               </Link>
               <Link
                 to="/about"
-                className="ml-8 text-sm md:text-base hover:underline md:ml-12"
+                className="ml-8 text-sm md:text-base md:ml-12"
               >
                 About
               </Link>
               <Link
                 to="/projects"
-                className="ml-8 text-sm md:text-base hover:underline md:ml-12"
+                className="ml-8 text-sm md:text-base md:ml-12"
               >
                 Projects
               </Link>
               <Link
                 to="/contact"
-                className="ml-8 text-sm md:text-base hover:underline md:ml-12"
+                className="ml-8 text-sm md:text-base md:ml-12"
               >
                 Contact
               </Link>

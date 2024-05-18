@@ -23,7 +23,7 @@ const Hero = () => {
     return (
         <>
             <Navbar />
-            <div className="flex flex-row justify-center items-center mt-20 gap-24 dark:bg-transparent dark:bg-[#0D2538] md:grid md:gap-5 md:px-10">
+            <div className="flex flex-row justify-center items-center mt-20 gap-24 dark:bg-transparent dark:bg-[#0D2538] md:grid md:justify-center md:items-center md:ml-10 md:gap-10">
                 <img
                     src={Image}
                     className="rounded-full size-64 ml-4 mt-4 border-8 border-blue-600 md:ml-20"
