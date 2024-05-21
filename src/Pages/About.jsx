@@ -29,7 +29,7 @@ const About = () => {
             <div className="top-0 py-2 flex flex-row md:gap-2 gap-3">
               <div className="w-4 rounded-full bg-red-400 md:bg-black md:w-3 md:h-3"></div>
               <div className="w-4 rounded-full bg-yellow-400 md:w-3 md:h-3"></div>
-              <div className="circle3 bg-green-400 md:w-3 md:h-3"></div>
+              <div className="circle3 mdbg-green-400 md:w-3 md:h-3"></div>
             </div>
             <p className="bg-transparent text-[#008DDA]">
               ntwali ${" "}
