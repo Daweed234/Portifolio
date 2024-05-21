@@ -1,9 +1,6 @@
 import React from 'react';
 import Image from '../Img/wiseman.png';
-import { FaTwitter } from 'react-icons/fa';
-import { FaInstagram } from 'react-icons/fa';
-import { FaGithub } from 'react-icons/fa';
-import { FaLinkedin } from 'react-icons/fa';
+import { FaTwitter, FaInstagram, FaGithub, FaLinkedin } from 'react-icons/fa';
 import Navbar from '../Components/Navbar';
 import { Link } from 'react-router-dom';
 import Copyright from '../Components/Copyright';
