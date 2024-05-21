@@ -1,5 +1,12 @@
- .circle1, .circle2, .circle3 {
+ .circle1, .circle2, .circle3{
     width: 17px; 
     height: 17px; 
     border-radius: 50%; 
+  }
+
+  @media (max-width:767px) {
+    .circle3{
+      width: 12px;
+      height: 12px;
+    }
   }

@@ -7,7 +7,10 @@ const Stack = ({ stacks }) => {
     <>
       <div className=" bg-transparent mt-4">
         {stacks.map((stack, idx) => (
-          <p key={idx} className=" hover:-translate-y-3 bg-transparent duration-300 mt-4">
+          <p
+            key={idx}
+            className=" hover:-translate-y-3 bg-transparent duration-300 mt-4"
+          >
             {stack}
           </p>
         ))}
@@ -21,13 +24,13 @@ const About = () => {
       <Navbar />
 
       <div className="flex flex-col justify-center items-center ">
-        <div className="flex bg-[#27242f] sm:bg-green-500 text-white w-[600px] md:w-[400px] md:py-6  py-5 h-auto rounded-lg ">
-          <p className="bg-transparent px-4 text-lg ">
-          <div className="top-0 py-2 flex flex-row gap-3">
-            <div className="circle1 bg-red-400"></div>
-            <div className="circle2 circle1 bg-yellow-400"></div>
-            <div className="circle3 circle1 bg-green-400"></div>
-          </div>
+        <div className="flex bg-[#27242f] text-white w-[600px] md:w-[400px] md:py-6  py-5 h-auto rounded-lg ">
+          <p className="bg-transparent px-4 text-lg md:text-base">
+            <div className="top-0 py-2 flex flex-row md:gap-2 gap-3">
+              <div className="w-4 rounded-full bg-red-400 md:bg-black md:w-3 md:h-3"></div>
+              <div className="w-4 rounded-full bg-yellow-400 md:w-3 md:h-3"></div>
+              <div className="circle3 bg-green-400 md:w-3 md:h-3"></div>
+            </div>
             <p className="bg-transparent text-[#008DDA]">
               ntwali ${" "}
               <span className="bg-transparent text-white">
@@ -38,8 +41,8 @@ const About = () => {
             <span className="bg-transparent text-[#27C93F]">(main)</span>{" "}
             <span className="bg-transparent text-[#008DDA]">$</span> ls
             <div className="flex flex-row bg-transparent">
-              <div className=" bg-transparent mt-4">
-                <p className="bg-transparent mb-1 md:mb-3">
+              <div className=" bg-transparent py-4">
+                <p className="bg-transparent py-1 md:py-3">
                   Meet Ntwali, a self-reliant web-app developer fascinated by
                   Solidity and Web 3.0. Driven by determination, <br /> I craft
                   intuitive web applications, seamlessly blending functionality
@@ -59,14 +62,14 @@ const About = () => {
         </div>
       </div>
 
-      <div className="flex flex-col justify-center items-center">
-        <div className="flex  bg-[#27242f] text-white md:w-[400px] md:py-6 w-[600px] mt-5 h-auto rounded-lg ">
-          <p className="bg-transparent px-4 md:text-base mt-9 text-lg ">
-          <div className="-mt-6 py-2 px-1  mb-5 flex flex-row gap-3">
-            <div className="circle1 bg-red-400"></div>
-            <div className="circle2 circle1 bg-yellow-400"></div>
-            <div className="circle3 circle1 bg-green-400"></div>
-          </div>
+      <div className="flex flex-col justify-center items-center py-5">
+        <div className="flex bg-[#27242f] text-white w-[600px] md:w-[400px] md:py-6  py-5 h-auto rounded-lg ">
+          <p className="bg-transparent px-4 text-lg md:text-base">
+            <div className="top-0 py-2 flex flex-row gap-3">
+            <div className="w-4 rounded-full bg-red-400"></div>
+              <div className="w-4 rounded-full bg-yellow-400"></div>
+              <div className="circle3  bg-green-400"></div>
+            </div>
             <p className="bg-transparent text-[#008DDA]">Work Experience $ </p>
 
             <p className="bg-transparent text-[#008DDA] mt-4">InfluencerHub</p>
@@ -102,14 +105,13 @@ const About = () => {
         </div>
       </div>
 
-      <div className="flex flex-col justify-center items-center">
-        <div className="flex md:w-[400px] md:py-6 bg-[#27242f] text-white w-[600px] mt-5 h-auto rounded-lg ">
-          <p className="bg-transparent px-4 md:text-base mt-9 text-lg ">
-          <div className="-mt-6 py-2 mb-5 flex flex-row gap-3">
-            <div className="circle1 bg-red-400"></div>
-            <div className="circle2 circle1 bg-yellow-400"></div>
-            <div className="circle3 circle1 bg-green-400"></div>
-          </div>
+      <div className="flex flex-col justify-center items-center ">
+        <div className="flex bg-[#27242f] text-white w-[600px] md:w-[400px] md:py-6  py-5 h-auto rounded-lg ">
+          <p className="bg-transparent px-4 text-lg md:text-base">
+            <div className="top-0 py-2 flex flex-row gap-3">
+            <div className="w-4 rounded-full bg-red-400"></div>
+              <div className="w-4 rounded-full bg-yellow-400"></div>
+              <div className="circle3  bg-green-400"></div>         </div>
             <p className="bg-transparent text-[#008DDA]">
               ntwali ${" "}
               <span className="bg-transparent text-white">cd skills</span>
@@ -186,14 +188,14 @@ const About = () => {
         </div>
       </div>
 
-      <div className="flex justify-center items-center mb-32">
-        <div className="flex bg-[#27242f] text-white w-[600px] mt-5 h-auto rounded-lg ">
-          <p className="bg-transparent px-4 md:text-base mt-9 text-lg ">
-          <div className="-mt-6 py-2 mb-5 flex flex-row gap-3">
+      <div className="flex flex-col justify-center items-center py-5">
+        <div className="flex bg-[#27242f] text-white w-[600px] md:w-[400px] md:py-6  py-5 h-auto rounded-lg ">
+          <p className="bg-transparent px-4 text-lg md:text-base">
+            <div className="top-0 py-2 flex flex-row gap-3">
             <div className="circle1 bg-red-400"></div>
-            <div className="circle2 circle1 bg-yellow-400"></div>
-            <div className="circle3 circle1 bg-green-400"></div>
-          </div>
+              <div className="circle2 circle1 bg-yellow-400"></div>
+              <div className="circle3 circle1 bg-green-400"></div>
+            </div>
             <p className="bg-transparent text-[#008DDA] ">
               ntwali ${" "}
               <span className="bg-transparent text-white">
@@ -208,7 +210,7 @@ const About = () => {
               <span className="bg-transparent text-[#008DDA]">$</span> ls
             </p>
 
-            <div className="bg-transparent mt-4 mb-8">
+            <div className="bg-transparent py4">
               <Stack
                 stacks={[
                   "🧑🏻‍💻 Coding",
@@ -221,7 +223,7 @@ const About = () => {
           </p>
         </div>
       </div>
-     <Copyright />
+      <Copyright />
     </>
   );
 };
