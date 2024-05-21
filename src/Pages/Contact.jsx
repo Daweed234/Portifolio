@@ -2,13 +2,11 @@ import React from "react";
 import Navbar from "../Components/Navbar";
 import Copyright from '../Components/Copyright';
 
-
-
 const Contact = () => {
   const handleClick = () => {
-    const email = "your.email@example.com";
+    const email = "ntwalidavid31@gmail.com";
     const subject = "Hello";
-    const body = "Hello,%0D%0A%0D%0AI'm reaching out to say hello.";
+    const body = "Hello,%0D%0A%0D%0AI'm reaching out to give you a project to work on:";
     const mailtoLink = `mailto:${email}?subject=${subject}&body=${body}`;
     window.location.href = mailtoLink;
   };
