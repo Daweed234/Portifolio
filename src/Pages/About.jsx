@@ -27,9 +27,9 @@ const About = () => {
         <div className="flex bg-[#27242f] text-white w-[600px] md:w-[400px] md:py-6  py-5 h-auto rounded-lg ">
           <p className="bg-transparent px-4 text-lg md:text-base">
             <div className="top-0 py-2 flex flex-row md:gap-2 gap-3">
-              <div className="w-4 rounded-full bg-red-400 md:bg-black md:w-3 md:h-3"></div>
+              <div className="w-4 rounded-full bg-red-400 md:w-3 md:h-3"></div>
               <div className="w-4 rounded-full bg-yellow-400 md:w-3 md:h-3"></div>
-              <div className="circle3 mdbg-green-400 md:w-3 md:h-3"></div>
+              <div className="circle3 md:bg-green-400 md:w-3 md:h-3"></div>
             </div>
             <p className="bg-transparent text-[#008DDA]">
               ntwali ${" "}
@@ -66,9 +66,9 @@ const About = () => {
         <div className="flex bg-[#27242f] text-white w-[600px] md:w-[400px] md:py-6  py-5 h-auto rounded-lg ">
           <p className="bg-transparent px-4 text-lg md:text-base">
             <div className="top-0 py-2 flex flex-row gap-3">
-            <div className="w-4 rounded-full bg-red-400"></div>
-              <div className="w-4 rounded-full bg-yellow-400"></div>
-              <div className="circle3  bg-green-400"></div>
+              <div className="w-4 rounded-full bg-red-400 md:w-3 md:h-3"></div>
+              <div className="w-4 rounded-full bg-yellow-400 md:w-3 md:h-3"></div>
+              <div className="circle3 md:bg-green-400 md:w-3 md:h-3"></div>
             </div>
             <p className="bg-transparent text-[#008DDA]">Work Experience $ </p>
 
@@ -109,9 +109,10 @@ const About = () => {
         <div className="flex bg-[#27242f] text-white w-[600px] md:w-[400px] md:py-6  py-5 h-auto rounded-lg ">
           <p className="bg-transparent px-4 text-lg md:text-base">
             <div className="top-0 py-2 flex flex-row gap-3">
-            <div className="w-4 rounded-full bg-red-400"></div>
-              <div className="w-4 rounded-full bg-yellow-400"></div>
-              <div className="circle3  bg-green-400"></div>         </div>
+              <div className="w-4 rounded-full bg-red-400 md:w-3 md:h-3"></div>
+              <div className="w-4 rounded-full bg-yellow-400 md:w-3 md:h-3"></div>
+              <div className="circle3 md:bg-green-400 md:w-3 md:h-3"></div>
+            </div>
             <p className="bg-transparent text-[#008DDA]">
               ntwali ${" "}
               <span className="bg-transparent text-white">cd skills</span>
@@ -192,7 +193,7 @@ const About = () => {
         <div className="flex bg-[#27242f] text-white w-[600px] md:w-[400px] md:py-6  py-5 h-auto rounded-lg ">
           <p className="bg-transparent px-4 text-lg md:text-base">
             <div className="top-0 py-2 flex flex-row gap-3">
-            <div className="circle1 bg-red-400"></div>
+              <div className="circle1 bg-red-400"></div>
               <div className="circle2 circle1 bg-yellow-400"></div>
               <div className="circle3 circle1 bg-green-400"></div>
             </div>
